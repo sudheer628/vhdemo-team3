@@ -6,19 +6,19 @@
 <body>
 	<h1>{{h}}</h1>
 	<hr>
-	{% if todos[0] %}
+	{% if inventory[0] %}
 	<h3>Result of the Search : DevOps Inventory</h3>
 	<table>
 	    <tr id="row">
 	    	<td class="status">Status</td>
 	    	<td class="name">Tool Name</td>
-	    	<td class="desc">Toll Description</td>
-	    	<td class="date">Date</td>
-	    	<td class="pr">Project</td>
+	    	<td class="desc">Contact</td>
+	    	<td class="date">Organization</td>
+	    	<td class="pr">Link</td>
 		<td class="func">Delete</td>
 		<td class="func">Modify</td>
 	    </tr>
-		{% for todo in todos %}
+		{% for todo in inventory %}
 		<tr class="datas">
 			<td><a href="./done?_id={{ todo['_id'] }}"><input type="image" src="static/images/{{todo['done']}}.png" alt="Submit ME"></a></td>
 			<td class="name">{{ todo["name"] }}</td>

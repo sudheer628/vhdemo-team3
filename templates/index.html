@@ -15,7 +15,7 @@
 		<li><a href="/completed" class="{{ a3 }}">Completed</a></li>
 	</ul>
 	<hr>
-	{% if todos[0] %}
+	{% if inventory[0] %}
 	<div span="right">
 	<form action="/search"	method="GET" >
 		<table class="none" id="close">
@@ -23,12 +23,10 @@
 		<td></td><td></td>
 		<td><big><b>Search Reference:</b></big></td>
 		<td><select name="refer" required>
-			<option value="name">Tool Name</option>
-			<option value="desc">Description</option>
-			<option value="date">Date</option>
-			<option value="pr">Priority</option>
+			<option value="name">TAG</option>
+			<option value="date">Organization</option>
 		</select></td>
-		<td><input type="text" name="key" placeholder="Search Task" size="15" /></td>
+		<td><input type="text" name="key" placeholder="Enter input here" size="15" /></td>
 		<td><button type="submit">Search</button></td>
 		</tr>
 		</table>
@@ -39,13 +37,13 @@
 	    <tr id="row">
 	    	<th class="status">Status</th>
 	    	<th class="name">Tool Name</th>
-	    	<th class="desc">Description Name</th>
-	    	<th class="date">Date</th>
-	    	<th class="pr">Priority</th>
+	    	<th class="desc">Contact</th>
+	    	<th class="date">Organization</th>
+	    	<th class="pr">Link</th>
 		<th class="func1">Remove</th>
 		<th class="func2">Modify</th>
 	    </tr>
-	{% for todo in todos %}
+	{% for todo in inventory %}
 		<tr class="datas">
 			<td><a href="./done?_id={{ todo['_id'] }}"><input type="image" src="static/images/{{todo['done']}}.png" alt="Submit ME"></a></td>
 			<td class="name">{{ todo["name"] }}</td>
@@ -67,10 +65,10 @@
 			<td><b><big><label>Add a Tool : </label></big></b></td>
 		</tr>
 		<tr>
-		<td><input type="text" name="name" placeholder="Tool Name" /></td>
-		<td><textarea name="desc" rows="1" cols="30" placeholder="Enter Description here..." required></textarea></td>
-		<td><input type="text" name="date" placeholder="Date" /></td>
-		<td><input type="text" name="pr" placeholder="Priority" /></td>
+		<td><input type="text" name="name" placeholder="TAG" /></td>
+		<td><textarea name="desc" rows="1" cols="30" placeholder="Contact Email address" required></textarea></td>
+		<td><input type="text" name="date" placeholder="Market or Organization name" /></td>
+		<td><input type="text" name="pr" placeholder="Link" /></td>
 		<td><button type="submit"> Create </button></td>
 		</tr>
 	</form>

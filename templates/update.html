@@ -24,17 +24,17 @@
 	<td>Tool Name</td><td> : </td><td><input type="text" name="name" value="{{ task['name'] }}" placeholder="{{ task['name'] }}"></td>
 	</tr>
 	<tr>
-	<td>Description</td><td> : </td><td><textarea type="text" name="desc" rows=3 cols=30 placeholder="{{ task['desc'] }}"> {{ task['desc'] }} </textarea></td>
+	<td>Contact</td><td> : </td><td><textarea type="text" name="desc" rows=3 cols=30 placeholder="{{ task['desc'] }}"> {{ task['desc'] }} </textarea></td>
 	</tr>
 	<tr>
-	<td>Date</td><td> : </td><td><input type="text" name="date" value="{{ task['date'] }}" placeholder="{{ task['date'] }}"></td>
+	<td>Organization</td><td> : </td><td><input type="text" name="date" value="{{ task['date'] }}" placeholder="{{ task['date'] }}"></td>
 	</tr>
 	<tr>
-	<td>Priority</td><td> : </td><td><input type="text" name="pr" value="{{ task['pr'] }}" placeholder="{{ task['pr'] }}"></td>
+	<td>Link</td><td> : </td><td><input type="text" name="pr" value="{{ task['pr'] }}" placeholder="{{ task['pr'] }}"></td>
 	</tr>
 	</table>
 	{% endfor %}
-		<button type="submit"> Update Task </button>
+		<button type="submit"> Update Details </button>
 		<br/>
 	</form>
 	<a href="/">Return to Tools List</a>

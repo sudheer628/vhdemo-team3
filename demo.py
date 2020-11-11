@@ -50,11 +50,11 @@ def done():
 @app.route("/action", methods=['POST'])
 def action ():
 	#Adding a Tool
-	name=request.values.get("name")
-	desc=request.values.get("desc")
-	date=request.values.get("date")
-	pr=request.values.get("pr")
-	inventory.insert({ "name":name, "desc":desc, "date":date, "pr":pr, "done":"no"})
+	tag=request.values.get("tag")
+	contact=request.values.get("contact")
+	market=request.values.get("market")
+	link=request.values.get("link")
+	inventory.insert({ "tag":tag, "contact":contact, "market":market, "link":link, "done":"no"})
 	return redirect("/list")
 
 @app.route("/remove")
@@ -73,12 +73,12 @@ def update ():
 @app.route("/action3", methods=['POST'])
 def action3 ():
 	#Updating a Tool with various references
-	name=request.values.get("name")
-	desc=request.values.get("desc")
-	date=request.values.get("date")
-	pr=request.values.get("pr")
+	tag=request.values.get("tag")
+	contact=request.values.get("contact")
+	market=request.values.get("market")
+	link=request.values.get("link")
 	id=request.values.get("_id")
-	inventory.update({"_id":ObjectId(id)}, {'$set':{ "name":name, "desc":desc, "date":date, "pr":pr }})
+	inventory.update({"_id":ObjectId(id)}, {'$set':{ "tag":tag, "contact":contact, "market":market, "link":link }})
 	return redirect("/")
 
 @app.route("/search", methods=['GET'])

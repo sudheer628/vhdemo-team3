@@ -21,16 +21,16 @@
 
 	<table>
 	<tr>
-	<td>Tool Name</td><td> : </td><td><input type="text" name="name" value="{{ task['name'] }}" placeholder="{{ task['name'] }}"></td>
+	<td>Tool Name</td><td> : </td><td><input type="text" name="tag" value="{{ task['tag'] }}" placeholder="{{ task['tag'] }}"></td>
 	</tr>
 	<tr>
-	<td>Contact</td><td> : </td><td><textarea type="text" name="desc" rows=3 cols=30 placeholder="{{ task['desc'] }}"> {{ task['desc'] }} </textarea></td>
+	<td>Contact</td><td> : </td><td><textarea type="text" name="contact" rows=3 cols=30 placeholder="{{ task['contact'] }}"> {{ task['contact'] }} </textarea></td>
 	</tr>
 	<tr>
-	<td>Organization</td><td> : </td><td><input type="text" name="date" value="{{ task['date'] }}" placeholder="{{ task['date'] }}"></td>
+	<td>Organization</td><td> : </td><td><input type="text" name="market" value="{{ task['market'] }}" placeholder="{{ task['market'] }}"></td>
 	</tr>
 	<tr>
-	<td>Link</td><td> : </td><td><input type="text" name="pr" value="{{ task['pr'] }}" placeholder="{{ task['pr'] }}"></td>
+	<td>Link</td><td> : </td><td><input type="text" name="link" value="{{ task['link'] }}" placeholder="{{ task['link'] }}"></td>
 	</tr>
 	</table>
 	{% endfor %}

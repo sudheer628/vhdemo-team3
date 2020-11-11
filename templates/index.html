@@ -23,8 +23,8 @@
 		<td></td><td></td>
 		<td><big><b>Search Reference:</b></big></td>
 		<td><select name="refer" required>
-			<option value="name">TAG</option>
-			<option value="date">Organization</option>
+			<option value="tag">TAG</option>
+			<option value="market">Organization</option>
 		</select></td>
 		<td><input type="text" name="key" placeholder="Enter input here" size="15" /></td>
 		<td><button type="submit">Search</button></td>
@@ -36,20 +36,20 @@
 	<table>
 	    <tr id="row">
 	    	<th class="status">Status</th>
-	    	<th class="name">Tool Name</th>
-	    	<th class="desc">Contact</th>
-	    	<th class="date">Organization</th>
-	    	<th class="pr">Link</th>
+	    	<th class="tag">Tool Name</th>
+	    	<th class="contact">Contact</th>
+	    	<th class="market">Organization</th>
+	    	<th class="link">Link</th>
 		<th class="func1">Remove</th>
 		<th class="func2">Modify</th>
 	    </tr>
 	{% for todo in inventory %}
 		<tr class="datas">
 			<td><a href="./done?_id={{ todo['_id'] }}"><input type="image" src="static/images/{{todo['done']}}.png" alt="Submit ME"></a></td>
-			<td class="name">{{ todo["name"] }}</td>
-			<td class="desc">{{ todo["desc"] }}</td>
-			<td class="date">{{ todo["date"] }}</td>
-			<td class="pr">{{ todo["pr"] }}</td>
+			<td class="tag">{{ todo["tag"] }}</td>
+			<td class="contact">{{ todo["contact"] }}</td>
+			<td class="market">{{ todo["market"] }}</td>
+			<td class="link">{{ todo["link"] }}</td>
 			<td class="func1"><a href="./remove?_id={{ todo['_id'] }}"><button type="submit">DELETE</button></a></td>
 			<td class="func1"><a href="./update?_id={{ todo['_id'] }}"><button type="submit">EDIT</button></a></td>
 		</tr>
@@ -65,11 +65,11 @@
 			<td><b><big><label>Add a Tool : </label></big></b></td>
 		</tr>
 		<tr>
-		<td><input type="text" name="name" placeholder="TAG" /></td>
-		<td><textarea name="desc" rows="1" cols="30" placeholder="Contact Email address" required></textarea></td>
-		<td><input type="text" name="date" placeholder="Market or Organization name" /></td>
-		<td><input type="text" name="pr" placeholder="Link" /></td>
-		<td><button type="submit"> Create </button></td>
+		<td><input type="text" name="tag" placeholder="TAG" /></td>
+		<td><textarea name="contact" rows="1" cols="30" placeholder="Contact Email address" required></textarea></td>
+		<td><input type="text" name="market" placeholder="Market or Organization name" /></td>
+		<td><input type="text" name="link" placeholder="Link for reference" /></td>
+		<td><button type="submit"> Add to inventory </button></td>
 		</tr>
 	</form>
 	</table>

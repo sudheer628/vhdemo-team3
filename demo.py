@@ -17,9 +17,23 @@ def redirect_url():
 @app.route("/")
 @app.route("/list")
 def lists ():
-	inventory_l = inventory.find()
+	inventory_l = inventory.find().sort("_id", 1)
 	a1="active"
 	return render_template('index.html',a1=a1,inventory=inventory_l,t=title,h=heading)
+
+@app.route("/bytag")
+def bytag():
+	#sort by tag
+	inventory_l = inventory.find().sort("tag", 1)
+	a2="active"
+	return render_template('index.html',a2=a2,inventory=inventory_l,t=title,h=heading)
+
+@app.route("/bymarket")
+def mymarket():
+	#sort by market
+	inventory_l = inventory.find().sort("market", 1)
+	a3="active"
+	return render_template('index.html',a3=a3,inventory=inventory_l,t=title,h=heading)
 
 @app.route("/action", methods=['POST'])
 def action ():

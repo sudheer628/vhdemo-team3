@@ -14,38 +14,12 @@ inventory = db.devops
 def redirect_url():
     return request.args.get('next') or request.referrer or url_for('index')
 
+@app.route("/")
 @app.route("/list")
 def lists ():
 	inventory_l = inventory.find()
 	a1="active"
 	return render_template('index.html',a1=a1,inventory=inventory_l,t=title,h=heading)
-
-@app.route("/")
-@app.route("/uncompleted")
-def tools():
-	inventory_l = inventory.find({"done":"no"})
-	a2="active"
-	return render_template('index.html',a2=a2,inventory=inventory_l,t=title,h=heading)
-
-
-@app.route("/completed")
-def completed ():
-	inventory_l = inventory.find({"done":"yes"})
-	a3="active"
-	return render_template('index.html',a3=a3,inventory=inventory_l,t=title,h=heading)
-
-@app.route("/done")
-def done():
-	#Done-or-not ICON
-	id=request.values.get("_id")
-	task=inventory.find({"_id":ObjectId(id)})
-	if(task[0]["done"]=="yes"):
-		inventory.update({"_id":ObjectId(id)}, {"$set": {"done":"no"}})
-	else:
-		inventory.update({"_id":ObjectId(id)}, {"$set": {"done":"yes"}})
-	redir=redirect_url()	
-
-	return redirect(redir)
 
 @app.route("/action", methods=['POST'])
 def action ():
@@ -54,7 +28,8 @@ def action ():
 	contact=request.values.get("contact")
 	market=request.values.get("market")
 	link=request.values.get("link")
-	inventory.insert({ "tag":tag, "contact":contact, "market":market, "link":link, "done":"no"})
+	best_practice=request.values.get("best_practice")
+	inventory.insert({ "tag":tag, "contact":contact, "market":market, "link":link, "best_practice":best_practice})
 	return redirect("/list")
 
 @app.route("/remove")
@@ -77,14 +52,14 @@ def action3 ():
 	contact=request.values.get("contact")
 	market=request.values.get("market")
 	link=request.values.get("link")
+	best_practice=request.values.get("best_practice")
 	id=request.values.get("_id")
-	inventory.update({"_id":ObjectId(id)}, {'$set':{ "tag":tag, "contact":contact, "market":market, "link":link }})
+	inventory.update({"_id":ObjectId(id)}, {'$set':{ "tag":tag, "contact":contact, "market":market, "link":link, "best_practice":best_practice }})
 	return redirect("/")
 
 @app.route("/search", methods=['GET'])
 def search():
 	#Searching a Tool with various references
-
 	key=request.values.get("key")
 	refer=request.values.get("refer")
 	if(key=="_id"):

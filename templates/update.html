@@ -24,13 +24,16 @@
 	<td>Tool Name</td><td> : </td><td><input type="text" name="tag" value="{{ task['tag'] }}" placeholder="{{ task['tag'] }}"></td>
 	</tr>
 	<tr>
-	<td>Contact</td><td> : </td><td><textarea type="text" name="contact" rows=3 cols=30 placeholder="{{ task['contact'] }}"> {{ task['contact'] }} </textarea></td>
+	<td>Contact</td><td> : </td><td><input type="text" name="contact" value="{{ task['contact'] }}" placeholder="{{ task['contact'] }}"></td>
 	</tr>
 	<tr>
 	<td>Organization</td><td> : </td><td><input type="text" name="market" value="{{ task['market'] }}" placeholder="{{ task['market'] }}"></td>
 	</tr>
 	<tr>
 	<td>Link</td><td> : </td><td><input type="text" name="link" value="{{ task['link'] }}" placeholder="{{ task['link'] }}"></td>
+	</tr>
+	<tr>
+	<td>Best Practices if any</td><td> : </td><td><textarea type="text" name="best_practice" rows=3 cols=30 placeholder="{{ task['best_practice'] }}"> {{ task['best_practice'] }} </textarea></td>
 	</tr>
 	</table>
 	{% endfor %}

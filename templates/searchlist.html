@@ -10,21 +10,21 @@
 	<h3>Result of the Search : DevOps Inventory</h3>
 	<table>
 	    <tr id="row">
-	    	<td class="status">Status</td>
 	    	<td class="tag">Tool Name</td>
 	    	<td class="contact">Contact</td>
 	    	<td class="market">Organization</td>
-	    	<td class="link">Link</td>
+			<td class="link">Link</td>
+			<td class="best_practice">Best Practices</td>
 		<td class="func">Delete</td>
 		<td class="func">Modify</td>
 	    </tr>
 		{% for todo in inventory %}
 		<tr class="datas">
-			<td><a href="./done?_id={{ todo['_id'] }}"><input type="image" src="static/images/{{todo['done']}}.png" alt="Submit ME"></a></td>
 			<td class="tag">{{ todo["tag"] }}</td>
 			<td class="contact">{{ todo["contact"] }}</td>
 			<td class="market">{{ todo["market"] }}</td>
 			<td class="link">{{ todo["link"] }}</td>
+			<td class="best_practice">{{ todo["best_practice"] }}</td>
 			<td class="func1"><a href="./remove?_id={{ todo['_id'] }}"><button type="submit">DELETE</button></a></td>
 			<td class="func1"><a href="./update?_id={{ todo['_id'] }}"><button type="submit">EDIT</button></a></td>
 		</tr>

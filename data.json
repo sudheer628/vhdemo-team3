@@ -1,0 +1,289 @@
+[{
+  "tag": "ansible",
+  "contact": "sean_bean@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "travis",
+  "contact": "mark_addy@gameofthron.es",
+  "best_practice": "nothing",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "github",
+  "contact": "nikolaj_coster-waldau@gameofthron.es",
+  "best_practice": "version control",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "gitlab",
+  "contact": "michelle_fairley@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF CZ"
+},{
+  "tag": "travis",
+  "contact": "lena_headey@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "gitlab",
+  "contact": "emilia_clarke@gameofthron.es",
+  "best_practice": "$2b$12$NzpbWHdMytemLtTfFKduHenr2NZ.rvxIKuYM4AWLTFaUShxbJ.G3q",
+  "link": "https://somedomain.com",
+  "market": "VF Germany"
+},{
+  "tag": "jenkins",
+  "contact": "iain_glen@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "puppet",
+  "contact": "aidan_gillen@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "gitlab",
+  "contact": "harry_lloyd@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "github",
+  "contact": "kit_harington@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF CZ"
+},{
+  "tag": "sentry",
+  "contact": "sophie_turner@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "ansible",
+  "contact": "maisie_williams@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Germany"
+},{
+  "tag": "nagios",
+  "contact": "richard_madden@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "selenium",
+  "contact": "alfie_allen@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "IT"
+},{
+  "tag": "mangodb",
+  "contact": "isaac_hempstead_wright@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "mysql",
+  "contact": "jack_gleeson@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "mongodb",
+  "contact": "rory_mccann@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "pytest",
+  "contact": "peter_dinklage@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Germany"
+},{
+  "tag": "ansible",
+  "contact": "jason_momoa@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "docker",
+  "contact": "liam_cunningham@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "puppet",
+  "contact": "john_bradley-west@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "docker",
+  "contact": "natalie_dormer@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "jira",
+  "contact": "stephen_dillane@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "pytest",
+  "contact": "carice_van_houten@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IN"
+},{
+  "tag": "kubernetes",
+  "contact": "james_cosmo@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IN"
+},{
+  "tag": "mysql",
+  "contact": "jerome_flynn@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "mongodb",
+  "contact": "conleth_hill@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "docker",
+  "contact": "sibel_kekilli@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "confluence",
+  "contact": "charles_dance@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Germany"
+},{
+  "tag": "bitbucket",
+  "contact": "rose_leslie@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IN"
+},{
+  "tag": "vagrant",
+  "contact": "oona_chaplin@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "docker",
+  "contact": "joe_dempsie@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "selenium",
+  "contact": "kristofer_hivju@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "gitlab",
+  "contact": "hannah_murray@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IN"
+},{
+  "tag": "ansible",
+  "contact": "gwendoline_christie@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF CZ"
+},{
+  "tag": "chef",
+  "contact": "iwan_rheon@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF CZ"
+},{
+  "tag": "mongodb",
+  "contact": "indira_varma@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "nagios",
+  "contact": "michiel_huisman@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IN"
+},{
+  "tag": "puppet",
+  "contact": "nathalie_emmanuel@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "chef",
+  "contact": "tom_wlaschiha@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "nagios",
+  "contact": "dean-charles_chapman@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF Group"
+},{
+  "tag": "ansible",
+  "contact": "michael_mcelhatton@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF CZ"
+},{
+  "tag": "github",
+  "contact": "jonathan_pryce@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IN"
+},{
+  "tag": "pytest",
+  "contact": "julian_glover@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "maven",
+  "contact": "ian_beattie@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IT"
+},{
+  "tag": "vagrant",
+  "contact": "kristian_nairn@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+},{
+  "tag": "heroku",
+  "contact": "mark_stanley@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF IN"
+},{
+  "tag": "kubernetes",
+  "contact": "natalia_tena@gameofthron.es",
+  "best_practice": "null",
+  "link": "https://somedomain.com",
+  "market": "VF ES"
+}]

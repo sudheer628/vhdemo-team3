@@ -8,7 +8,7 @@
 		<script src="{{ url_for('static',filename='assets/emoji.js')}}"></script>
 	</head>
 <body>
-	<h1>{{ h }}</h1>
+	<h1 align="center">{{ h }}</h1>
 	<ul>
 		<li><a href="/list" class="{{ a1 }}">ALL</a></li>
 		<li><a href="/bytag" class="{{ a2 }}">Sort by TAG</a></li>
@@ -16,7 +16,7 @@
 	</ul>
 	<hr>
 	{% if inventory[0] %}
-	<div span="right">
+	<div span="left">
 	<form action="/search"	method="GET" >
 		<table class="none" id="close">
 		<tr>
@@ -32,6 +32,23 @@
 		</table>
 	</form>
 	</div>
+	<form action="/action" method="POST">
+		<table class="none">
+			<tr>
+				<td><b><big><label>Add a Tool : </label></big></b></td>
+			</tr>
+			<tr>
+			<td><input type="text" name="tag" placeholder="TAG" /></td>
+			<td><input type="text" name="contact", placeholder="Contact Email address" /></td>
+			<td><input type="text" name="market" placeholder="Market or Organization name" /></td>
+			<td><input type="text" name="link" placeholder="Link for reference" /></td>
+			<td><textarea name="best_practice" rows="1" cols="30" placeholder="Best Practices if any" required></textarea></td>
+			<td></td>
+			<td><button type="submit"> Add to inventory </button></td><br>
+			</tr>
+		</form>
+		</table>
+
 	<b><big>Tools List :</big></b>
 	<table>
 	    <tr id="row">
@@ -59,22 +76,6 @@
 		<h4>No Tools in the List !!</h4>
 	{% endif %}
 	<hr/>
-	<form action="/action" method="POST">
-	<table class="none">
-		<tr>
-			<td><b><big><label>Add a Tool : </label></big></b></td>
-		</tr>
-		<tr>
-		<td><input type="text" name="tag" placeholder="TAG" /></td>
-		<td><input type="text" name="contact", placeholder="Contact Email address" /></td>
-		<td><input type="text" name="market" placeholder="Market or Organization name" /></td>
-		<td><input type="text" name="link" placeholder="Link for reference" /></td>
-		<td><textarea name="best_practice" rows="1" cols="30" placeholder="Best Practices if any" required></textarea></td>
-		<td></td>
-		<td><button type="submit"> Add to inventory </button></td>
-		</tr>
-	</form>
-	</table>
 	<script>
 
 	</script>

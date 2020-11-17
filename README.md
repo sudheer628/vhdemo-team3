@@ -9,7 +9,7 @@
 * Flask==1.1.2
 * pymongo==3.11.0
 * dnspython==2.0.0
-* and access to mongodb atlas.. Copy access method (for application) from mongodb atlas and include the credentials into main application file.
+* and access to mongodb atlas.. Copy access method (for application) from mongodb atlas and include access method into main application file.
 
 ## Getting started
 run the application on local host using python flask web framework.

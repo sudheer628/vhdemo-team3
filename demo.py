@@ -7,7 +7,8 @@ app = Flask(__name__)
 title = "Vodafone Group - Hackathon Chalenge"
 heading = "DevOps Inventory Manager"
 
-client = MongoClient("mongodb+srv://sudheer:12maialen69@team-3.ascgs.mongodb.net")
+client = MongoClient("mongodb+srv://ssudheer:12maialen69@cluster1.liesz.mongodb.net")
+#client = MongoClient("mongodb+srv://sudheer:12maialen69@team-3.ascgs.mongodb.net")
 db = client.vhdemo
 inventory = db.devops
 
